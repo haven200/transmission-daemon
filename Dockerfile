@@ -10,7 +10,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/'  /etc/apk/re
 
 COPY run.sh /opt/src/run.sh
 
-EXPOSE 55555/tcp 55555/udp 50002/tcp
+EXPOSE 55555/tcp 55555/udp 80/tcp
 
 VOLUME [ "/mnt/bt/kodi" ]
 
