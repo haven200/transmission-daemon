@@ -15,5 +15,5 @@ EXPOSE 12345/tcp 123455/udp 80/tcp
 VOLUME [ "/mnt/bt/kodi" ]
 
 CMD [ "/bin/sh","/opt/src/run.sh" ]
-HEALTHCHECK CMD netstat -ln | grep 55555 || exit 1
+HEALTHCHECK CMD netstat -ln | grep 12345 || exit 1
 
